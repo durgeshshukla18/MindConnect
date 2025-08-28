@@ -1,12 +1,44 @@
-# React + Vite
+# 🌿 MindConnect – AI-Powered Mental Wellness Platform  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MindConnect is an **AI-driven mental wellness platform** built with the **MERN stack** and **Gemini API**.  
+It provides **empathetic chat support, peer group matching, journaling, mood tracking, and wellness exercises** — creating a safe, judgment-free space for self-reflection and emotional growth.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 🧘 **AI Counselor** – GPT-powered chatbot for 24x7 mental wellness support.  
+- 🫂 **Peer Group Matching** – Connect with people facing similar life challenges.  
+- 📝 **Mood Tracking & Journaling** – Private logs with emotional insights.  
+- 🧠 **Wellness Exercises** – Guided mindfulness, CBT, and relaxation exercises.  
+- 🔒 **Privacy First** – Journals and mood logs remain confidential.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **Frontend**: React (JSX), CSS/Tailwind  
+- **Backend**: Node.js, Express  
+- **Database**: MongoDB (Mongoose ODM)  
+- **AI Layer**: OpenAI GPT API  
+- **Real-time Communication**: Socket.IO (for peer groups)  
+
+---
+
+## 📂 Project Structure
+```bash
+mindconnect/
+│── client/              # Frontend (React)
+│   ├── src/
+│   │   ├── components/  # Reusable components (Navbar, ChatBox, etc.)
+│   │   ├── pages/       # Main screens (Home, Chat, Journal, Mood, Groups)
+│   │   ├── App.jsx
+│   │   └── index.jsx
+│   └── package.json
+│
+│── server/              # Backend (Express + Node.js)
+│   ├── models/          # MongoDB models (User, Journal, Chat, Mood, Group)
+│   ├── routes/          # API routes
+│   ├── controllers/     # Business logic
+│   ├── server.js
+│   └── package.json
+│
+│── README.md
