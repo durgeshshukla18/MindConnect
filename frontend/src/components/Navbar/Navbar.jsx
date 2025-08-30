@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { Navigate } from 'react-router-dom';
 
 
 function Navbar() {
   return (
      <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">MindConnect</Link>
+        <img onClick={Navigate('/')} src="./images/MindConnectLogo.png" alt="MindConnectLogo" className="logo-image" />
       </div>
 
       <ul className="navbar-links">

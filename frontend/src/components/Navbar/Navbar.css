@@ -65,3 +65,9 @@
 .btn-primary:hover {
   background: #45a049;
 }
+
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}

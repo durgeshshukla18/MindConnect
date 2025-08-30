@@ -1,0 +1,113 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Background gradient (light & dark mode) */
+  background: linear-gradient(to bottom, #f3f4f6, #e5e7eb); /* light */
+  color: #000000; /* default text */
+  backdrop-filter: blur(12px);
+
+  /* Dark mode gradient */
+  /* Add this as a modifier class in your JSX if you have dark mode toggle */
+  border-right: 1px solid #d1d5db; /* light mode border */
+  transition: all 0.3s ease-in-out;
+
+  padding: 25px;
+  width: 250px; /* Fixed width for sidebar */
+  height: calc(100vh - 70px); /* full height minus navbar */
+  position: fixed;
+  top: 70px; /* below navbar */
+  left: 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 999;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* gap: 10px; */
+    overflow: hidden;
+    border-radius: 10px;
+}
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.new-chat-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    color: #000;
+
+}
+
+.chat-history {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+  
+    /* gap: 10px; */
+
+}
+
+.bottom-section {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+
+.profile-btn, .settings-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-btn:hover, .settings-btn:hover, .new-chat-btn:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: #f44336;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
