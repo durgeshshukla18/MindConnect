@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import moment from "moment/moment";
-import Markdown from "react-markdown";
-import prism from "prismjs";
+// import moment from "moment/moment";
+// import Markdown from "react-markdown";
+// import prism from "prismjs";
 
 
 function Message({ message }) {
